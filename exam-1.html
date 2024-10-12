@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1</title>
+</head>
+<body>
+    <h1>Exam on Aqeedah</h1>
+    <form id="exam-form">
+        <label>1. What is Tawheed?</label><br>
+        <input type="radio" name="q1" value="Monotheism"> Monotheism<br>
+        <input type="radio" name="q1" value="Polytheism"> Polytheism<br><br>
+
+        <button type="submit">Submit Exam</button>
+    </form>
+
+    <script>
+        document.getElementById('exam-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your answers have been submitted.');
+        });
+    </script>
+</body>
+</html>
